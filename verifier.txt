@@ -1,0 +1,13 @@
+def verifier(m,g):
+    rem=calculateRemainder(m,g)
+    if(int(rem)==0):
+        return "message is correct"
+    else:
+        return "message is not correct"
+def alter(m,bit):
+    m_list=list(m)
+    if(m_list[bit-1]=='1'):
+        m_list[bit-1]='0'
+    else:
+         m_list[bit-1]='1'
+    return "".join(m_list)
